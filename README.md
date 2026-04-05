@@ -328,7 +328,7 @@ Authorization: Basic Auth
 ## API Documentation
 Postman Collection:
 ```
-ADD YOUR POSTMAN COLLECTION LINK HERE
+https://documenter.getpostman.com/view/50004875/2sBXiqE8qr
 ```
 
 ---
