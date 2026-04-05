@@ -22,6 +22,31 @@ role-based access control, and dashboard summary APIs.
 
 ---
 
+## Architecture Overview
+
+This project follows a **layered architecture**, which separates responsibilities into different layers for better maintainability and scalability.
+
+### Controller Layer
+Handles incoming HTTP requests and sends responses to clients.  
+Controllers expose REST APIs for users, financial records, and dashboard operations.
+
+### Service Layer
+Contains the **core business logic** of the application.  
+It processes data, enforces business rules, and communicates between controllers and repositories.
+
+### Repository Layer
+Responsible for **database access** using Spring Data JPA.  
+Repositories interact with the MySQL database through Hibernate ORM.
+
+### Model Layer
+Contains entity classes such as **User** and **FinancialRecord** that represent database tables.
+
+### Security Layer
+Spring Security is used to implement **HTTP Basic Authentication and Role-Based Access Control (RBAC)**.  
+User passwords are encrypted using **BCrypt** before storing in the database.
+
+---
+
 ## Prerequisites
 
 Before running this project, ensure the following tools are installed:
