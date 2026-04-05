@@ -171,7 +171,7 @@ For every request in Postman:
 | GET | `/dashboard/total-expenses` | Total expenses | ALL |
 | GET | `/dashboard/net-balance` | Net balance | ALL |
 | GET | `/dashboard/category-totals` | Category wise totals | ALL |
-| GET | `/dashboard/recent` | Recent 5 transactions | ALL |
+| GET | `/dashboard/recent-transactions` | Recent 5 transactions | ALL |
 
 ---
 
@@ -316,12 +316,15 @@ Authorization: Basic Auth
 ---
 
 ## Future Improvements
-- Implement JWT Authentication
-- Add pagination and sorting for record listing
-- Add Swagger API documentation
-- Add caching for dashboard APIs
-- Add unit and integration tests
-- Export reports as CSV or PDF
+
+- Implement JWT-based authentication instead of Basic Authentication.
+- Add pagination and sorting for financial record APIs.
+- Integrate Swagger / OpenAPI for interactive API documentation.
+- Add caching for dashboard summary APIs to improve performance.
+- Write unit tests and integration tests for better reliability.
+- Add export functionality to download reports as CSV or PDF.
+- Include audit fields such as createdAt and updatedAt for tracking changes.
+- Provide Docker support for easier deployment.
 
 ---
 
