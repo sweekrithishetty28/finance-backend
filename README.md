@@ -371,5 +371,4 @@ src/
 
 ## Developer
 **Sweekrithi Shetty**  
-Backend Developer Intern Assessment  
-Zorvyn FinTech Pvt. Ltd.
+
